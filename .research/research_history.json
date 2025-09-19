@@ -3,5 +3,19 @@
   "queries": [
     "novel loss function LLM",
     "adaptive loss LLM fine-tuning"
+  ],
+  "research_study_list": [
+    {
+      "title": "Discovering Preference Optimization Algorithms with and for Large Language Models"
+    },
+    {
+      "title": "Language Generation with Strictly Proper Scoring Rules"
+    },
+    {
+      "title": "Geometric-Averaged Preference Optimization for Soft Preference Labels"
+    },
+    {
+      "title": "Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning "
+    }
   ]
 }
