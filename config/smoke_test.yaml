@@ -1,0 +1,18 @@
+defaults:
+  seed_list: [11]
+  model_list: ["meta-llama/Llama-2-7b-chat-hf"]
+  methods: ["SC-PSPO"]
+  datasets:
+    argilla/dpo-mix-7k: 512
+    argilla/reddit_tldr_pref_5votes: 512
+    argilla/human_harmless_500: 256
+training:
+  epochs: 1
+  per_device_train_batch: 4
+  grad_accum: 2
+  lr: 5e-7
+  alpha_lr: 5e-4
+evaluation:
+  mt_bench_prompts: true
+  alpaca_eval: true
+  calibration_bins: 10
