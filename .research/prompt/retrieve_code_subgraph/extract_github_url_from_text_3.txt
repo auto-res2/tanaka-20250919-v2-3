@@ -1,0 +1,17 @@
+
+Input:
+# Task
+You carefully read the contents of the “Paper Outline” and select one GitHub link from the “GitHub URLs List” that you think is most relevant to the contents.
+# Constraints
+- Output the index number corresponding to the selected GitHub URL.
+- Be sure to select only one GitHub URL.
+- If there is no related GitHub link, output None.
+# Paper Outline
+AdaLoRA's methodology consists of two core components: (i) SVD-based adaptation: Incremental updates (∆) to pre-trained weight matrices are parameterized as ∆ = PΛQ, where Λ is a diagonal matrix of singular values and P, Q are orthogonal matrices representing singular vectors. An orthogonality regularizer is added to the training loss to enforce P⊤P = QQ⊤ = I, avoiding intensive exact SVD computations. (ii) Importance-aware rank allocation: The rank of ∆ is dynamically adjusted by pruning singular values based on an importance score. A novel importance metric is designed that combines the singular value and vectors, using a smoothed sensitivity and uncertainty quantification (I(t) * U(t)) for each entry. Singular values of triplets with low importance scores are zeroed out. A global budget scheduler is also introduced, starting with a slightly higher initial budget and gradually reducing it to the target using a cubic schedule, followed by a fixed fine-tuning phase.
+
+# GitHub URLs List
+['https://github.com/huggingface/transformers', 'https://github.com/microsoft/LoRA']
+Output:
+{
+    "index": 1
+}
